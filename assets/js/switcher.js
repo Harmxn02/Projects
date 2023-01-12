@@ -16,7 +16,6 @@ function setActive() {
 
 
     $work.addEventListener("click", function() {
-        console.log("work clicked");
         $work.classList.add("selected");
         $about.classList.remove("selected");
 
@@ -25,7 +24,6 @@ function setActive() {
     })
     
     $about.addEventListener("click", function() {
-        console.log("about clicked");
         $about.classList.add("selected");
         $work.classList.remove("selected");
 
