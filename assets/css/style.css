@@ -7,6 +7,9 @@ body {
     overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 
 nav {
@@ -61,19 +64,21 @@ h1.selected {
 }
 
 
-#about_section.hidden {
-    display: none;
+#about_section {
+    max-width: 80%;
+    margin: 0 auto;
 }
 
-#about_section::first-letter {
-    font-size: 2.5rem;
-    color: white;
-} 
+#about_section h2 {
+    color: rgb(200, 200, 200);
+    font-size: x-large;
+}
+
 
 p {
     color: rgb(200, 200, 200);
-    max-width: 70ch;
-    margin: 0 auto;
+    max-width: 60ch;
+    /* margin: 0 auto; */
     text-align: justify;
 
     transition: color 100ms ease-in-out;
@@ -81,6 +86,36 @@ p {
     line-height: 200%;
 }
 
+
+#links a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 1em 2em;
+    border-radius: .5em;
+
+    transition: background-color 200ms ease-in-out;
+}
+
+#links a:hover {
+    cursor: pointer;
+}
+
+
+#resume {
+    background-color: rgb(255, 80, 80);
+}
+
+#resume:hover {
+    background-color: rgb(227, 67, 67);
+}
+
+#linkedin {
+    background-color: rgb(0, 119, 181);
+}
+
+#linkedin:hover {
+    background-color: rgb(0, 99, 152);
+}
 
 
 @media only screen and (min-width: 750px) {
