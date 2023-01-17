@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", scrollTrack );
 
 
 function scrollTrack() {
-	const track = document.getElementById("image-track");
+	const track = document.querySelector("#image-track");
 
 	const handleOnDown = e => track.dataset.mouseDownAt = e.clientX;
 
@@ -29,7 +29,7 @@ function scrollTrack() {
 	  		transform: `translate(${nextPercentage}%, -50%)`
 		}, { duration: 1200, fill: "forwards" });
 	
-		for(const image of track.getElementsByClassName("image")) {
+		for(const image of track.querySelectorAll(".image")) {
 	  		image.animate({
 				objectPosition: `${100 + nextPercentage}% center`
 	  		}, { duration: 1200, fill: "forwards" });
