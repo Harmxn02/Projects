@@ -67,7 +67,38 @@ h1.selected {
 #about_section {
     max-width: 80%;
     margin: 0 auto;
+    text-align: center;
 }
+
+#about_section div {
+    display: flex;
+    justify-content: center;
+}
+
+#about_section div p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 410px) {
+    #about_section div p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #about_section div p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #about_section div p {
+        font-size: 1.75rem;
+    }
+}
+
 
 #about_section h2 {
     color: rgb(200, 200, 200);
@@ -98,6 +129,19 @@ p {
 
 #links a:hover {
     cursor: pointer;
+}
+
+
+.cta {
+    text-decoration: underline;
+    color: rgb(200, 200, 200);
+    text-underline-offset: 4px;
+
+    transition: color 300ms ease-in-out;
+}
+
+.cta:hover {
+    color: rgb(169, 46, 169);
 }
 
 
